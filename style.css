@@ -1,0 +1,209 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.main-container{
+    position: relative;
+ color:black;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    background-color: white;
+    box-shadow: 0px 0px 1rem black;
+}
+.header>h1>span{
+    font-size: 30px;
+    color: blue;
+}
+ul li {
+    display: inline;
+    margin: 1rem;
+}
+ul li a{
+    text-decoration: none;
+}
+.body>img{
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem;
+}
+.pargph>img{
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;  
+}
+.body{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 78vh;
+}
+.archive-body{
+    align-items: center;
+   overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 78vh;
+}
+.archive-body>.pargph{
+    border-radius: 20px;
+    position: relative;
+    margin: 1rem;
+    height: 25rem;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 2rem black;
+}
+.archive-body>.pargph>p{
+    position: relative;
+    position: relative;
+    height: 18rem;
+    width: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.body>.pargph{
+    height: 50vh;
+    margin-top: -5rem;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+h1>span{
+    font-size: 30px;
+    color: blue;
+}
+p>span{
+    display:block;
+    flex-direction: row;
+    color: blue;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.archive-body>.pargph>p>span{
+    display:inline-block;
+    flex-direction: row;
+    color: blue;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.pargph>p{  
+    position: relative;
+    width: 25rem;
+    box-shadow:2px 2px 4px 4px black;
+    height: 6rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+button{
+    position: relative;
+    left: 10rem;
+    width: 6.5rem;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 5px;
+
+}
+.subscribe-body{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 78vh;
+}
+.subscribe-body>img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20%;
+
+}
+button:hover{
+    background-color: rgb(187, 187, 214);
+}
+.footer{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    text-align: center;
+    height: 5.2vh;
+    box-shadow:0px 0px 10px 0px black;
+}
+.footer>p{
+    text-align: center;
+    height: 5vh;
+
+
+}
+
+@media screen and (max-width:619px){
+    .body>div{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:580px){
+    .icons .bi-wechat{
+        display: flex;
+    }
+    .icons .bi-facebook,.icons .bi-instagram,.icons .bi-twitter{
+        display: none;
+    }
+}
+
+@media screen and (max-width:553px){
+     .bi-list{
+        display: flex;
+     }
+     .icons .bi-wechat{
+        display: none;
+     }
+     nav ul{
+        display: none;
+     }
+}
+
+@media screen and (min-width:700px) {
+    .all-about .about1{
+        flex: 1;
+    }
+    .all-about .about2{
+        flex: 1;
+    }
+}
+
+@media screen and (min-width:1300px){
+     .lists{
+        width: 70%;
+     }
+     .book a img{
+        width: 20rem;
+        height: 40rem;
+     }
+}
+
+@media screen and (max-width:1110px){
+    .lists{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 18px;
+    }
+    .book{
+        margin: 5% 0;
+    }
+}
